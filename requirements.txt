@@ -1,0 +1,9 @@
+bs4==0.0.1
+Flask==0.11.1
+ipykernel==4.4.1
+ipython==5.0.0
+ipython-genutils==0.1.0
+ipywidgets==5.2.2
+Jinja2==2.8
+lxml==3.6.4
+Markdown==2.6.6

@@ -1,0 +1,75 @@
+html,body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px; 
+}
+.flash {
+  margin: 0px auto;
+  background: #cee5F5;
+  padding: 0.5em;
+  border: 1px solid #aacbe2; 
+  float: center;
+  width: 600px;
+}
+.error {
+  background: #f0d6d6; 
+  padding: 0.5em; 
+}
+
+.navbar-right li a#login {
+  background-color: #e0e0f0;
+}
+.navbar-right li a#logout {
+  background-color: #f0e0e0;
+}
+
+.content {
+  margin: 0px auto;
+  background-color: #fafafa;
+  width: 600px;
+  height: 90%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.home-content{
+  margin-left: 80px;
+}
+.home-title {
+  text-align: center;
+}
+
+.check-open {
+  margin-left: 30px;
+  padding-top: 0;
+}
+
+.form-submit {
+  width: 500px;
+  margin: 0px auto;
+}
+
+.problems {
+  margin-left: 50px;
+}
+
+.pages {
+  margin: 0 auto;
+  width: 50%;
+  text-align: center;
+}
+.page-link {
+  float: left;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#select-problem {
+  float: right;
+  margin-right: 15px;
+}
+
+#btn-submit {
+  float: right;
+}

@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block body %}
+
+  <h1 class="home-title">Python Study 2016 @ HYU OOParts & ICEWALL</h1>
+
+  <div class="home-content">
+    <h2> Lecture in <a href="https://maybes.gitbooks.io/python-2016/content/week0.html">Gitbook</a></h2>
+
+    <h3> ! News </h3>
+    <ul>
+      <li>
+        <h4> now support python2 <small>but print must encode to 'utf-8'</small></h4>
+      </li>
+    </ul>
+  </div>
+
+  {% if error %}
+    <p class="error">
+      <strong>Error:</strong>
+    </p>
+    {{ error }}
+  {% endif %}
+
+{% endblock %}

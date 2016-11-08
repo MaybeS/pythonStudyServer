@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block body %}
+  <table class="table table-hover">
+    <tr class="active">
+      <td>#</td>
+      <td>Problem</td>
+      <td>Name</td>
+      <td>Size</td>
+      <td>Result</td>
+    </tr>
+    <tr class={{ result.result_class }}>
+      <td>{{ result.id }}</td>
+      <td>{{ result.problem_name }}</td>
+      <td>{{ result.user_name }}</td>
+      <td>{{ result.size }}</td>
+      <td data-toggle="tooltip" data-placement="bottom" title={{ result.stamp.split('-')[1][-4:] }}>{{ result.process }}</td>
+    </tr>
+  </table>
+  {% if result.open %}
+    <pre id="code-text">{{ result.content }}</pre>
+    <script type="text/javascript" src="http://api.colorscripter.com/code/colorscripter.js"></script>
+    <script type="text/javascript">
+      var cs = new ColorScripter('python');
+      $('#code-text').html( cs.color($('#code-text').text()) );
+    </script>
+  {% endif %}
+  {% if result.process == "E" or result.process == "X" %}
+    <div class="err">
+      <h2>Err: </h2>
+      <h4>{{ result.result }}</h4>
+    </div>
+  {% endif %}
+{% endblock %}
