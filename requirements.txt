@@ -7,3 +7,4 @@ ipywidgets==5.2.2
 Jinja2==2.8
 lxml==3.6.4
 Markdown==2.6.6
+virtualenv==15.0.3
